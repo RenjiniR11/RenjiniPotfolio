@@ -92,28 +92,36 @@ export const portfolioData = {
   
   projects: [
     {
-      id: 1,
+  id: 1,
+  title: "Garment ERP Management System",
+  description: "Developed an ERP system for a garments company to manage production, inventory, orders, and financial records. Implemented data model concepts for efficient database design and optimized SQL queries for better performance.",
+  technologies: ["ASP.NET WebForms", "C#", "SQL Server", "Data Modeling"],
+  image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=600&h=400&fit=crop"
+}
+,
+    {
+      id: 2,
       title: "Inventa – Inventory Management System",
       description: "Full asset tracking & accounting system with lifecycle management from purchase to invoicing. Migrated Non-EF Core to EF Core.",
       technologies: ["ASP.NET", "Angular", "MS SQL", "EF Core"],
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop"
     },
     {
-      id: 2,
+      id: 3,
       title: "JMS – Jewellery Management System",
       description: "Weight-based tracking system with purity classification, barcode identification, and accounting integrations.",
       technologies: ["ASP.NET", "Angular", "MS SQL"],
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop"
     },
     {
-      id: 3,
+      id: 4,
       title: "Software Engineering Service C",
       description: "UK-based Delivery & Asset Management project with maintenance and client updates.",
       technologies: ["ASP.NET MVC", "SSIS", "MS SQL"],
       image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop"
     },
     {
-      id: 4,
+      id: 5,
       title: "Viewtube (Demo Project)",
       description: "YouTube-like platform with user authentication and full features.",
       technologies: ["ASP.NET Web API", "Angular"],
