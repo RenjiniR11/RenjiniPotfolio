@@ -13,7 +13,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
 
         <h1 className="font-bold text-xl">
-          Renjini
+          Renjini Radhakrishnan
         </h1>
 
         <div className="space-x-6 hidden md:flex">

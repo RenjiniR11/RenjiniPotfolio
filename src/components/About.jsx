@@ -3,6 +3,7 @@ import { Award, Briefcase, Code, Users } from 'lucide-react';
 import { Card, CardContent } from '../ui/card';
 import { portfolioData } from '../data/mock';
 
+
 const About = () => {
   const { about } = portfolioData;
 
@@ -27,9 +28,9 @@ const About = () => {
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 to-blue-400 rounded-lg blur opacity-25 group-hover:opacity-50 transition-opacity"></div>
               <img
-                src={about.image}
+                src={portfolioData.about.image}
                 alt="Profile"
-                className="relative w-80 h-80 object-cover rounded-lg shadow-2xl"
+                className="relative w-80 h-110 object-cover rounded-lg shadow-2xl"
               />
             </div>
           </div>

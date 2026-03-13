@@ -1,3 +1,6 @@
+
+import profileImage from "../assets/Renjini.PNG";
+
 export const portfolioData = {
   hero: {
     name: "Renjini Radhakrishnan",
@@ -15,7 +18,7 @@ export const portfolioData = {
       { label: "Focus", value: "Enterprise Applications" },
       { label: "Certification", value: "Microsoft Certified (Azure)" }
     ],
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop"
+    image: profileImage
   },
   
   skills: {
@@ -42,7 +45,8 @@ export const portfolioData = {
     ],
     databases: [
       "MS SQL",
-      "Azure Basics"
+      "Azure Basics",
+       "Azure DevOps"
     ]
   },
   
