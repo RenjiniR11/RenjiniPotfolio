@@ -1,0 +1,39 @@
+name: Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main   # deploy whenever you push to main branch
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # forces Node 24 for actions
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repo
+      - uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js (local build)
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20   # local build Node version (can use 20 or 24)
+
+      # Step 3: Install dependencies
+      - run: npm install
+
+      # Step 4: Build project
+      - run: npm run build
+
+      # Step 5: Configure GitHub Pages
+      - uses: actions/configure-pages@v5
+
+      # Step 6: Upload the build folder
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: dist
+
+      # Step 7: Deploy to GitHub Pages
+      - uses: actions/deploy-pages@v4
